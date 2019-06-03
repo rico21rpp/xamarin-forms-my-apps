@@ -12,3 +12,4 @@ C:\PROGRAMMING\Belajar Mobile\MyApps\MyApps\MyApps\obj\Debug\netstandard2.0\MyAp
 C:\PROGRAMMING\Belajar Mobile\MyApps\MyApps\MyApps\obj\Debug\netstandard2.0\MyApps.dll
 C:\PROGRAMMING\Belajar Mobile\MyApps\MyApps\MyApps\obj\Debug\netstandard2.0\MyApps.pdb
 C:\PROGRAMMING\Belajar Mobile\MyApps\MyApps\MyApps\obj\Debug\netstandard2.0\XamlC.stamp
+C:\PROGRAMMING\Belajar Mobile\MyApps\MyApps\MyApps\obj\Debug\netstandard2.0\MyApps.csprojAssemblyReference.cache

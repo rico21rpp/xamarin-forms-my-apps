@@ -15,31 +15,42 @@
                    TextColor="Black"
                    Margin="0,20,0,0"/>
 
-            <Button ImageSource="CalculatorButton"
-                    WidthRequest="100"
-                    HorizontalOptions="Center"
-                    Margin="0,40,0,0"
-                    Clicked="OnBtnCalculatorClicked"/>
+            <Image Source="CalculatorButton"
+                   WidthRequest="100"
+                   HorizontalOptions="Center">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="OnBtnCalculatorClicked" />
+                </Image.GestureRecognizers>
+            </Image>
             <Label Text="CALCULATOR"
                    HorizontalOptions="Center"
                    FontSize="Small"
-                   TextColor="Black" />
+                   TextColor="Black"
+                   Margin="0,0,0,20" />
 
-            <Button ImageSource="ChartButton"
+            <Image Source="ChartButton"
                    WidthRequest="100"
-                   HorizontalOptions="Center"
-                   Margin="0,40,0,0" 
-                   Clicked="OnBtnChartClicked"/>
+                   HorizontalOptions="Center">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="OnBtnChartClicked" />
+                </Image.GestureRecognizers>
+            </Image>
             <Label Text="CHART"
                    HorizontalOptions="Center"
                    FontSize="Small"
-                   TextColor="Black" />
+                   TextColor="Black"
+                   Margin="0,0,0,20"/>
 
-            <Button ImageSource="SoftwareButton"
-                    WidthRequest="100"
-                    HorizontalOptions="Center"
-                    Margin="0,40,0,0"
-                    Clicked="OnBtnSoftwareClicked"/>
+            <Image Source="SoftwareButton"
+                   WidthRequest="100"
+                   HorizontalOptions="Center">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="OnBtnSoftwareClicked" />
+                </Image.GestureRecognizers>
+            </Image>
             <Label Text="SOFTWARE"
                    HorizontalOptions="Center"
                    FontSize="Small"

@@ -9,7 +9,8 @@
             <Label Text="X Chart"
                FontSize="Large"
                HorizontalOptions="Center" 
-               Margin="0,0,0,30"/>
+               Margin="0,0,0,30"
+               TextColor="Black"/>
             <forms:ChartView x:Name="chartView"
                              HeightRequest="150"/>
         </StackLayout>
