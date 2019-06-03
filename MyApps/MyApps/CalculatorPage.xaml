@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyApps.CalculatorPage"
+             Title="Calculator Page">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label x:Name="StaticNum"
+               Text=""
+               FontSize="Small"
+               TextColor="Black"
+               Margin="10"
+               HorizontalOptions="End"/>
+            <Label x:Name="DynamicsNum"
+               Text="0"
+               FontSize="Large"
+               TextColor="Black"
+               Margin="10"
+               HorizontalOptions="End"/>
+
+            <Grid Margin="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="1*" />
+                </Grid.RowDefinitions>
+
+                <!-- Row 0 -->
+                <Button ImageSource="del"
+                    CornerRadius="10"
+                    Clicked="OnBtnDelClicked" 
+                    FontSize="Small"
+                    Padding="5"/>
+                <Button Grid.Column="1"
+                    Text="C"
+                    CornerRadius="10"
+                    Clicked="OnBtnClearClicked"
+                    FontSize="Medium" />
+                <Button Grid.Column="2"
+                    Text="/"
+                    CornerRadius="10" 
+                    Clicked="OnBtnDivClicked"
+                    FontSize="Medium" />
+                <Button Grid.Column="3"
+                    Text="X"
+                    CornerRadius="10"
+                    Clicked ="OnBtnMulClicked"
+                    FontSize="Medium" />
+
+                <!-- Row 1 -->
+                <Button Grid.Row="1"
+                    Text="7"
+                    CornerRadius="10" 
+                    Clicked="OnBtn7Clicked"
+                    FontSize="Medium" />
+                <Button Grid.Row="1"
+                    Grid.Column="1"
+                    Text="8"
+                    CornerRadius="10"
+                    Clicked="OnBtn8Clicked"
+                    FontSize="Medium" />
+                <Button Grid.Row="1"
+                    Grid.Column="2"
+                    Text="9" 
+                    CornerRadius="10"
+                    Clicked="OnBtn9Clicked"
+                    FontSize="Medium" />
+                <Button Grid.Row="1"
+                    Grid.Column="3"
+                    Text="-"
+                    CornerRadius="10"
+                    Clicked="OnBtnSubClicked"
+                    FontSize="Medium" />
+
+                <!-- Row 2 -->
+                <Button Grid.Row="2"
+                    Text="4"
+                    CornerRadius="10" 
+                    Clicked="OnBtn4Clicked"
+                    FontSize="Medium" />
+                <Button Grid.Row="2"
+                    Grid.Column="1"
+                    Text="5"
+                    CornerRadius="10"
+                    Clicked="OnBtn5Clicked"
+                    FontSize="Medium" />
+                <Button Grid.Row="2"
+                    Grid.Column="2"
+                    Text="6"
+                    CornerRadius="10" 
+                    Clicked="OnBtn6Clicked"
+                    FontSize="Medium" />
+                <Button Grid.Row="2"
+                    Grid.Column="3"
+                    Text="+"
+                    CornerRadius="10"
+                    Clicked="OnBtnPlusClicked"
+                    FontSize="Medium" />
+
+                <!-- Row 3 -->
+                <Button Grid.Row="3"
+                    Text="1"
+                    CornerRadius="10"
+                    Clicked="OnBtn1Clicked"
+                    FontSize="Medium" />
+                <Button Grid.Row="3"
+                    Grid.Column="1"
+                    Text="2"
+                    CornerRadius="10" 
+                    Clicked="OnBtn2Clicked"
+                    FontSize="Medium" />
+                <Button Grid.Row="3"
+                    Grid.Column="2"
+                    Text="3"
+                    CornerRadius="10" 
+                    Clicked="OnBtn3Clicked"
+                    FontSize="Medium" />
+                <Button Grid.Row="3"
+                    Grid.RowSpan="2"
+                    Grid.Column="3"
+                    Text="="
+                    CornerRadius="10" 
+                    Clicked="OnBtnTotalClicked"
+                    FontSize="Medium" />
+
+                <!-- Row 4 -->
+                <Button Grid.Row="4"
+                    Grid.ColumnSpan="2"
+                    Text="0"
+                    CornerRadius="10" 
+                    Clicked="OnBtn0Clicked"
+                    FontSize="Medium" />
+                <Button Grid.Row="4"
+                    Grid.Column="2"
+                    Text="."
+                    CornerRadius="10"
+                    Clicked="OnBtnCommaClicked"
+                    FontSize="Medium" />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

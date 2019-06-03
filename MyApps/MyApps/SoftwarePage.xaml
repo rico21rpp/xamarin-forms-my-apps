@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyApps.SoftwarePage"
+             Title="Software Page">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Label Text="List of Software" 
+                   HorizontalOptions="Center"
+                   FontSize="Large"
+                   TextColor="Black"/>
+
+            <ListView x:Name="softwareListView" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Name}"
+                                  Detail="{Binding Price}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
